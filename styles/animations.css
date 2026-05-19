@@ -1,56 +1,17 @@
-/* Anti-gravity hovering effect */
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-.float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.float-delayed {
-  animation: float 6s ease-in-out 3s infinite;
-}
-
-/* Glow Effects */
-.glow-text {
-  text-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
-}
-
-.glow-box {
-  box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
-  transition: box-shadow 0.3s ease;
-}
-
-.glow-box:hover {
-  box-shadow: 0 0 30px rgba(6, 182, 212, 0.6);
-}
+/* Scroll Animations — handled via IntersectionObserver in main.js */
+/* Classes .animate-on-scroll and .is-visible are now in globals.css */
 
 /* Micro-interactions */
-.interactive-element {
+.interactive-hover {
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.interactive-element:hover {
-  transform: translateY(-5px) scale(1.02);
+.interactive-hover:hover {
+  transform: translateY(-4px);
 }
 
-/* Scroll Animations */
-.animate-on-scroll {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  will-change: opacity, transform;
-}
-
-.animate-on-scroll.is-visible {
-  opacity: 1;
-  transform: translateY(0);
+@media (prefers-reduced-motion: reduce) {
+  .interactive-hover:hover {
+    transform: none;
+  }
 }

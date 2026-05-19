@@ -3,114 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayush Singh | Portfolio</title>
-    <!-- Google Fonts: Outfit -->
+    <title>Ayush Singh | Strategy & Operations</title>
+    <meta name="description" content="Portfolio of Ayush Singh — MBA '27 candidate at IIT Kharagpur with expertise in operations strategy, process engineering, and business consulting.">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/animations.css">
 </head>
 <body>
 
-    <!-- HERO SECTION -->
-    <section id="hero" style="min-height: 100vh; display: flex; align-items: center;">
-        <div class="container" style="text-align: center;">
-            <h1 class="glow-text float animate-on-scroll" style="font-size: 4rem; margin-bottom: 1rem; color: var(--text-primary);">
-                <span style="color: var(--accent-cyan);">Ayush</span> Singh
-            </h1>
-            <p class="float-delayed animate-on-scroll" style="font-size: 1.5rem; max-width: 800px; margin: 0 auto 3rem auto; color: var(--text-secondary);">
-                Bridging Chemical Engineering and Operational Strategy. <br>
-                MBA '27 Candidate at VGSoM, IIT Kharagpur.
-            </p>
-            <div class="float animate-on-scroll" style="display: flex; gap: 1rem; justify-content: center;">
-                <a href="#about" class="btn btn-primary interactive-element">View Profile</a>
-                <a href="#contact" class="btn btn-outline interactive-element glow-box">Get in Touch</a>
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#hero" class="navbar-brand">ayush<span>.</span></a>
+            <div class="nav-links">
+                <a href="#about">About Me</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero" style="min-height: 100vh; display: flex; align-items: center; padding-top: 5rem;">
+        <div class="container">
+            <div class="animate-on-scroll">
+                <p class="section-label">Welcome</p>
+                <h1 class="hero-title" style="font-size: 4.5rem; font-weight: 800; letter-spacing: -0.04em; margin-bottom: 1.5rem; line-height: 1.05;">
+                    Hello! I'm <br><span style="color: var(--accent-warm);">Ayush Singh</span>
+                </h1>
+                <p style="font-size: 1.2rem; max-width: 600px; margin-bottom: 1rem; color: var(--text-body);">
+                    MBA '27 Candidate at <strong style="color: var(--text-dark);">VGSoM, IIT Kharagpur</strong>. A performance-driven professional bridging Chemical Engineering and Operational Strategy.
+                </p>
+                <ul class="about-values" style="max-width: 500px; margin-bottom: 2.5rem;">
+                    <li>Lean Six Sigma Green Belt certified</li>
+                    <li>3+ years in plant operations & project management</li>
+                    <li>Passionate about operational excellence</li>
+                </ul>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="#contact" class="btn btn-dark">Let's Talk</a>
+                    <a href="#experience" class="btn btn-outline-dark">View Experience →</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ABOUT SECTION -->
+    <!-- ========== SKILLS MARQUEE ========== -->
+    <div class="marquee-section">
+        <div class="marquee-track">
+            <span class="marquee-item">Operations Strategy</span>
+            <span class="marquee-item">Process Engineering</span>
+            <span class="marquee-item">Market Research</span>
+            <span class="marquee-item">Business Consulting</span>
+            <span class="marquee-item">Project Management</span>
+            <span class="marquee-item">Lean Six Sigma</span>
+            <span class="marquee-item">Financial Modeling</span>
+            <span class="marquee-item">Digital Marketing</span>
+            <!-- Duplicated for seamless loop -->
+            <span class="marquee-item">Operations Strategy</span>
+            <span class="marquee-item">Process Engineering</span>
+            <span class="marquee-item">Market Research</span>
+            <span class="marquee-item">Business Consulting</span>
+            <span class="marquee-item">Project Management</span>
+            <span class="marquee-item">Lean Six Sigma</span>
+            <span class="marquee-item">Financial Modeling</span>
+            <span class="marquee-item">Digital Marketing</span>
+        </div>
+    </div>
+
+    <!-- ========== ABOUT ========== -->
     <section id="about">
         <div class="container">
-            <div class="glass-panel interactive-element glow-box animate-on-scroll" style="max-width: 900px; margin: 0 auto; text-align: center;">
-                <h2 class="glow-text" style="font-size: 2.5rem; margin-bottom: 2rem; color: var(--text-primary);">About Me</h2>
-                <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
-                    A performance-driven professional with a Lean Six Sigma Green Belt and a passion for operational excellence. I bring a strong blend of technical expertise, strategic thinking, and people-oriented leadership to the table.
-                </p>
-                <p style="font-size: 1.1rem;">
-                    With over two years of experience at Nayara Energy, I’ve grown through hands-on roles in plant operations and project management. Whether it's streamlining workflows, identifying inefficiencies, or aligning cross-functional efforts, I work with a clear focus on outcomes without losing sight of the people behind the process. I take pride in being the kind of person who brings clarity into chaos.
-                </p>
+            <div class="about-grid">
+                <div class="animate-on-scroll">
+                    <p class="section-label">About Me</p>
+                    <h2 class="section-title">Who I Am</h2>
+                </div>
+                <div class="about-content animate-on-scroll">
+                    <p>I bring a strong blend of technical expertise, strategic thinking, and people-oriented leadership. With over two years of hands-on experience at Nayara Energy, I've grown through roles in plant operations and project management.</p>
+                    <p>Whether it's streamlining workflows, identifying inefficiencies, or aligning cross-functional efforts, I work with a clear focus on outcomes without losing sight of the people behind the process. I take pride in being the kind of person who brings clarity into chaos — balancing precision with flexibility.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- EXPERIENCE SECTION -->
+    <div class="container"><div class="section-divider"></div></div>
+
+    <!-- ========== EXPERIENCE ========== -->
     <section id="experience">
         <div class="container">
-            <h2 class="glow-text animate-on-scroll" style="font-size: 2.5rem; margin-bottom: 4rem; text-align: center;">Professional Experience</h2>
-            
-            <div class="timeline">
-                
+            <div class="animate-on-scroll">
+                <p class="section-label">My Experience</p>
+                <h2 class="section-title">EXPERIENCE</h2>
+            </div>
+
+            <div class="exp-stack">
+
                 <!-- TGHC -->
-                <div class="timeline-item animate-on-scroll">
-                    <div class="glass-panel interactive-element glow-box">
-                        <h3 style="color: var(--accent-cyan); font-size: 1.8rem; margin-bottom: 0.5rem;">Strategy Consultant (Live Project)</h3>
-                        <h4 style="color: var(--text-primary); margin-bottom: 1rem; font-weight: 500;">TGHC - The Good Health Clinic | Jan 2026 - Apr 2026</h4>
-                        <p>Worked on a strategic consulting project focused on international expansion for a Longevity Clinic business model. Assessed high-potential global markets, conducted in-depth market sizing and segmentation, and evaluated regulatory entry barriers across geographies.</p>
+                <div class="exp-card animate-on-scroll">
+                    <div class="exp-logo">
+                        <img src="./assets/logos/tghc.webp" alt="TGHC Logo">
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-title">Strategy Consultant (Live Project)</h3>
+                                <p class="exp-company">TGHC — The Good Health Clinic</p>
+                            </div>
+                            <span class="exp-duration">Jan 2026 – Apr 2026</span>
+                        </div>
+                        <p class="exp-desc">Worked on a strategic consulting project focused on international expansion for a Longevity Clinic business model. Assessed high-potential global markets, conducted in-depth market sizing and segmentation, and evaluated regulatory entry barriers across geographies.</p>
                     </div>
                 </div>
 
                 <!-- LeMiCi IQ -->
-                <div class="timeline-item animate-on-scroll">
-                    <div class="glass-panel interactive-element glow-box">
-                        <h3 style="color: var(--accent-indigo); font-size: 1.8rem; margin-bottom: 0.5rem;">Market Research Intern</h3>
-                        <h4 style="color: var(--text-primary); margin-bottom: 1rem; font-weight: 500;">LeMiCi IQ | Dec 2025 - Mar 2026</h4>
-                        <p>Conducted multi-sector market research using structured frameworks to deliver actionable insights. Developed a comprehensive Jewellery Sector Ontology covering 20+ value chain elements, improving research efficiency by ~25%.</p>
+                <div class="exp-card animate-on-scroll">
+                    <div class="exp-logo">
+                        <img src="./assets/logos/lemici.jpg" alt="LeMiCi IQ Logo">
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-title">Market Research Intern</h3>
+                                <p class="exp-company">LeMiCi IQ</p>
+                            </div>
+                            <span class="exp-duration">Dec 2025 – Mar 2026</span>
+                        </div>
+                        <p class="exp-desc">Conducted multi-sector market research using structured frameworks. Developed a comprehensive Jewellery Sector Ontology covering 20+ value chain elements, improving research efficiency by ~25%.</p>
                     </div>
                 </div>
 
                 <!-- Decodskills -->
-                <div class="timeline-item animate-on-scroll">
-                    <div class="glass-panel interactive-element glow-box">
-                        <h3 style="color: var(--accent-cyan); font-size: 1.8rem; margin-bottom: 0.5rem;">Strategy & Growth Consultant (Live Project)</h3>
-                        <h4 style="color: var(--text-primary); margin-bottom: 1rem; font-weight: 500;">Decodskills | Jan 2026 - Feb 2026</h4>
-                        <p>Conducted SME market research to identify automation gaps. Designed and validated end-to-end AI workflows for small businesses, delivering actionable insights through structured reports.</p>
+                <div class="exp-card animate-on-scroll">
+                    <div class="exp-logo-text" style="background: linear-gradient(135deg, #7c3aed, #a855f7);">DS</div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-title">Strategy & Growth Consultant (Live Project)</h3>
+                                <p class="exp-company">Decodskills</p>
+                            </div>
+                            <span class="exp-duration">Jan 2026 – Feb 2026</span>
+                        </div>
+                        <p class="exp-desc">Conducted SME market research to identify automation gaps. Designed and validated end-to-end AI workflows for small businesses, delivering actionable insights through structured reports.</p>
                     </div>
                 </div>
 
                 <!-- IIT Kharagpur Admissions -->
-                <div class="timeline-item animate-on-scroll">
-                    <div class="glass-panel interactive-element glow-box">
-                        <h3 style="color: var(--accent-indigo); font-size: 1.8rem; margin-bottom: 0.5rem;">Coordinator, Admission Committee</h3>
-                        <h4 style="color: var(--text-primary); margin-bottom: 1rem; font-weight: 500;">VGSoM, IIT Kharagpur | Aug 2025 - Present</h4>
-                        <p>Responsible for facilitating the admission process in liaison with the faculty advisor, interacting with MBA aspirants, and helping them make informed decisions effectively.</p>
+                <div class="exp-card animate-on-scroll">
+                    <div class="exp-logo">
+                        <img src="./assets/logos/iitkgp.svg" alt="IIT Kharagpur Logo">
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-title">Coordinator, Admission Committee</h3>
+                                <p class="exp-company">VGSoM, IIT Kharagpur</p>
+                            </div>
+                            <span class="exp-duration">Aug 2025 – Present</span>
+                        </div>
+                        <p class="exp-desc">Responsible for facilitating the admission process in liaison with the faculty advisor, interacting with MBA aspirants, and helping them make informed decisions effectively.</p>
                     </div>
                 </div>
 
                 <!-- Nayara Energy -->
-                <div class="timeline-item animate-on-scroll">
-                    <div class="glass-panel interactive-element glow-box">
-                        <h3 style="color: var(--accent-cyan); font-size: 1.8rem; margin-bottom: 0.5rem;">Assistant Manager</h3>
-                        <h4 style="color: var(--text-primary); margin-bottom: 1rem; font-weight: 500;">Nayara Energy | Jul 2022 - Jul 2025</h4>
-                        <p style="margin-bottom: 1rem;">Managed Delayed Coker Unit (DCU) operations and contributed to Nayara's first petrochemical transition initiative. Key participant in the Fluidized Catalytic Cracker (FCC) revamp and successful commissioning of the Propylene Recovery Unit (PRU).</p>
-                        <p style="color: var(--text-primary); font-weight: 600; margin-bottom: 0.5rem;">Awards & Recognitions:</p>
-                        <ul style="color: var(--text-secondary); margin-left: 1.5rem; line-height: 1.8;">
-                            <li>Safety Champion (June–Dec 2024)</li>
-                            <li>"GEM" Token of Appreciation for achieving zero steam leak in DCU</li>
-                            <li>Near Miss Reporting – 2nd Runner-up (2024)</li>
-                        </ul>
+                <div class="exp-card animate-on-scroll">
+                    <div class="exp-logo">
+                        <img src="./assets/logos/nayara.jpg" alt="Nayara Energy Logo">
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-title">Assistant Manager</h3>
+                                <p class="exp-company">Nayara Energy</p>
+                            </div>
+                            <span class="exp-duration">Jul 2022 – Jul 2025</span>
+                        </div>
+                        <p class="exp-desc">Managed Delayed Coker Unit (DCU) operations and contributed to Nayara's first petrochemical transition initiative. Key participant in the Fluidized Catalytic Cracker (FCC) revamp and successful commissioning of the Propylene Recovery Unit (PRU).</p>
+                        <div class="exp-awards">
+                            <h5>Awards & Recognitions</h5>
+                            <ul>
+                                <li>Safety Champion (June–Dec 2024)</li>
+                                <li>"GEM" Token of Appreciation for achieving zero steam leak in DCU</li>
+                                <li>Near Miss Reporting – 2nd Runner-up (2024)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
                 <!-- My Equation -->
-                <div class="timeline-item animate-on-scroll">
-                    <div class="glass-panel interactive-element glow-box">
-                        <h3 style="color: var(--accent-indigo); font-size: 1.8rem; margin-bottom: 0.5rem;">Team Leader (Sales & Marketing)</h3>
-                        <h4 style="color: var(--text-primary); margin-bottom: 1rem; font-weight: 500;">My Equation | Jun 2023 - Sep 2023</h4>
-                        <p>Successfully managed a team of 20 interns, organized collaboration meetings with various organizations, and implemented impactful email marketing and funneling techniques resulting in heightened customer engagement.</p>
+                <div class="exp-card animate-on-scroll">
+                    <div class="exp-logo-text" style="background: linear-gradient(135deg, #ea580c, #f97316);">ME</div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-title">Team Leader (Sales & Marketing)</h3>
+                                <p class="exp-company">My Equation</p>
+                            </div>
+                            <span class="exp-duration">Jun 2023 – Sep 2023</span>
+                        </div>
+                        <p class="exp-desc">Successfully managed a team of 20 interns, organized collaboration meetings with various organizations, and implemented impactful email marketing and funneling techniques resulting in heightened customer engagement.</p>
                     </div>
                 </div>
 
@@ -118,61 +215,81 @@
         </div>
     </section>
 
-    <!-- EDUCATION SECTION -->
+    <div class="container"><div class="section-divider"></div></div>
+
+    <!-- ========== EDUCATION ========== -->
     <section id="education">
         <div class="container">
-            <h2 class="glow-text animate-on-scroll" style="font-size: 2.5rem; margin-bottom: 4rem; text-align: center;">Education & Credentials</h2>
-            
-            <div class="grid-2">
-                <!-- MBA -->
-                <div class="glass-panel interactive-element glow-box animate-on-scroll">
-                    <h3 style="color: var(--accent-cyan); margin-bottom: 0.5rem;">Master of Business Administration (MBA)</h3>
-                    <h4 style="margin-bottom: 1rem; color: var(--text-secondary);">VGSoM, IIT Kharagpur | Class of 2027</h4>
-                    <p>Focusing on operational strategy and business management to compliment technical engineering roots.</p>
+            <div class="animate-on-scroll">
+                <p class="section-label">Education</p>
+                <h2 class="section-title">Education & Credentials</h2>
+            </div>
+
+            <div class="edu-grid">
+                <div class="edu-card animate-on-scroll">
+                    <div class="edu-logo">
+                        <img src="./assets/logos/iitkgp.svg" alt="IIT Kharagpur Logo">
+                    </div>
+                    <div class="edu-content">
+                        <h3>Master of Business Administration (MBA)</h3>
+                        <h4>VGSoM, IIT Kharagpur · Class of 2027</h4>
+                        <p>Focusing on operational strategy and business management to complement technical engineering roots.</p>
+                    </div>
                 </div>
 
-                <!-- B.Tech -->
-                <div class="glass-panel interactive-element glow-box animate-on-scroll">
-                    <h3 style="color: var(--accent-indigo); margin-bottom: 0.5rem;">B.Tech in Chemical Engineering</h3>
-                    <h4 style="margin-bottom: 1rem; color: var(--text-secondary);">Vellore Institute of Technology (VIT) | Class of 2022</h4>
-                    <p>Built a strong foundation in process engineering, plant operations, and analytical problem-solving.</p>
+                <div class="edu-card animate-on-scroll">
+                    <div class="edu-logo">
+                        <img src="./assets/logos/vit.svg" alt="VIT Logo">
+                    </div>
+                    <div class="edu-content">
+                        <h3>B.Tech in Chemical Engineering</h3>
+                        <h4>Vellore Institute of Technology (VIT) · Class of 2022</h4>
+                        <p>Built a strong foundation in process engineering, plant operations, and analytical problem-solving.</p>
+                    </div>
                 </div>
             </div>
 
             <!-- Certifications -->
-            <div class="glass-panel interactive-element glow-box animate-on-scroll" style="margin-top: 2rem; text-align: center;">
-                <h3 style="color: var(--text-primary); margin-bottom: 1rem;">Certifications & Top Skills</h3>
-                <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-                    <span style="background: rgba(6, 182, 212, 0.1); color: var(--accent-cyan); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500; border: 1px solid rgba(6, 182, 212, 0.3);">Lean Six Sigma Green Belt</span>
-                    <span style="background: rgba(6, 182, 212, 0.1); color: var(--accent-cyan); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500; border: 1px solid rgba(6, 182, 212, 0.3);">Bloomberg Market Concepts</span>
-                    <span style="background: rgba(6, 182, 212, 0.1); color: var(--accent-cyan); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500; border: 1px solid rgba(6, 182, 212, 0.3);">Product Management Bootcamp</span>
-                    <span style="background: rgba(6, 182, 212, 0.1); color: var(--accent-cyan); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500; border: 1px solid rgba(6, 182, 212, 0.3);">Career Essentials in Generative AI</span>
-                    <span style="background: rgba(6, 182, 212, 0.1); color: var(--accent-cyan); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500; border: 1px solid rgba(6, 182, 212, 0.3);">Fundamentals of Digital Marketing</span>
-                    <span style="background: rgba(99, 102, 241, 0.1); color: var(--accent-indigo); padding: 0.5rem 1rem; border-radius: 20px; font-weight: 500; border: 1px solid rgba(99, 102, 241, 0.3);">Financial Modeling</span>
+            <div class="animate-on-scroll" style="margin-top: 3rem;">
+                <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">Certifications & Top Skills</h3>
+                <div class="cert-grid">
+                    <span class="cert-tag">Lean Six Sigma Green Belt</span>
+                    <span class="cert-tag">Bloomberg Market Concepts</span>
+                    <span class="cert-tag">Product Management Bootcamp</span>
+                    <span class="cert-tag">Career Essentials in Generative AI</span>
+                    <span class="cert-tag">Fundamentals of Digital Marketing</span>
+                    <span class="cert-tag">Financial Modeling</span>
                 </div>
             </div>
-            
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" style="padding-bottom: 8rem;">
-        <div class="container" style="text-align: center;">
-            <div class="glass-panel interactive-element glow-box float animate-on-scroll" style="max-width: 600px; margin: 0 auto;">
-                <h2 class="glow-text" style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--text-primary);">Let's Connect</h2>
-                <p style="margin-bottom: 3rem; color: var(--text-secondary);">
-                    Open to discussing strategic roles, operations consulting, and new opportunities.
-                </p>
-                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.5rem;">
-                    <a href="mailto:singhayush17846@gmail.com" class="btn btn-primary interactive-element" style="min-width: 200px;">Email Me</a>
-                    <a href="https://www.linkedin.com/in/0ayushsingh/" target="_blank" rel="noopener noreferrer" class="btn btn-outline interactive-element glow-box" style="min-width: 200px;">LinkedIn Profile</a>
+    <div class="container"><div class="section-divider"></div></div>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" style="padding-bottom: 6rem;">
+        <div class="container">
+            <div class="contact-card animate-on-scroll">
+                <p class="section-label" style="color: #888; justify-content: center;">Contact Me</p>
+                <h2 style="font-size: 2.5rem; margin-bottom: 0.75rem;">Let's Connect</h2>
+                <p>Open to discussing strategic roles, operations consulting, and new opportunities.</p>
+                <div class="contact-btns">
+                    <a href="mailto:singhayush17846@gmail.com" class="btn btn-accent">Email Me ✉</a>
+                    <a href="https://www.linkedin.com/in/0ayushsingh/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">LinkedIn ↗</a>
                 </div>
-                <p style="color: var(--text-secondary); font-size: 0.9rem;">
-                    Mobile: <a href="tel:+918160648751" style="color: var(--accent-cyan);">+91 8160648751</a>
+                <p style="color: #666; font-size: 0.9rem;">
+                    Mobile: <a href="tel:+918160648751" style="color: var(--accent-warm);">+91 8160648751</a>
                 </p>
             </div>
         </div>
     </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer style="padding: 2rem 0; border-top: 1px solid var(--border-light); text-align: center;">
+        <div class="container">
+            <p style="font-size: 0.85rem; color: var(--text-light);">© 2026 Ayush Singh. All rights reserved.</p>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="./js/main.js"></script>
