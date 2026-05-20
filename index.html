@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayush Singh | Strategy & Operations</title>
     <meta name="description" content="Portfolio of Ayush Singh — MBA '27 candidate at IIT Kharagpur with expertise in operations strategy, process engineering, and business consulting.">
+    
+    <!-- Open Graph & SEO Meta Tags -->
+    <meta property="og:title" content="Ayush Singh | Strategy & Operations">
+    <meta property="og:description" content="Portfolio of Ayush Singh — MBA '27 candidate at IIT Kharagpur with expertise in operations strategy, process engineering, and business consulting.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,23 +41,34 @@
 
     <!-- ========== HERO ========== -->
     <section id="hero" style="min-height: 100vh; display: flex; align-items: center; padding-top: 5rem;">
-        <div class="container">
-            <div class="animate-on-scroll">
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 4rem; flex-wrap: wrap;">
+            <div class="animate-on-scroll" style="flex: 1; min-width: 300px;">
                 <p class="section-label">Welcome</p>
-                <h1 class="hero-title" style="font-size: 4.5rem; font-weight: 800; letter-spacing: -0.04em; margin-bottom: 1.5rem; line-height: 1.05;">
-                    Hello! I'm <br><span style="color: var(--accent-warm);">Ayush Singh</span>
+                <h1 class="hero-title" style="font-size: 4.5rem; font-weight: 800; letter-spacing: -0.04em; margin-bottom: 2rem; line-height: 1.05;">
+                    Hello! I'm <br><span class="gradient-text">Ayush Singh</span>
                 </h1>
-                <p style="font-size: 1.2rem; max-width: 600px; margin-bottom: 1rem; color: var(--text-body);">
-                    MBA '27 Candidate at <strong style="color: var(--text-dark);">VGSoM, IIT Kharagpur</strong>. A performance-driven professional bridging Chemical Engineering and Operational Strategy.
+                <p style="font-size: 1.25rem; max-width: 600px; margin-bottom: 2rem; color: var(--text-body);">
+                    MBA '27 Candidate at <strong style="color: var(--text-dark);">VGSoM, IIT Kharagpur</strong>. A performance-driven professional with interests in strategy, marketing, business growth, and problem-solving.<br>Curious and driven, with experience across projects, analytics, and operations in fast-paced environments.
                 </p>
-                <ul class="about-values" style="max-width: 500px; margin-bottom: 2.5rem;">
+                <ul class="about-values" style="max-width: 500px; margin-bottom: 3rem;">
                     <li>Lean Six Sigma Green Belt certified</li>
                     <li>3+ years in plant operations & project management</li>
                     <li>Passionate about operational excellence</li>
                 </ul>
                 <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
                     <a href="#contact" class="btn btn-dark">Let's Talk</a>
-                    <a href="#experience" class="btn btn-outline-dark">View Experience →</a>
+                    <a href="./assets/Ayush_Singh_Resume.pdf" target="_blank" class="btn btn-outline-dark">View Resume →</a>
+                </div>
+            </div>
+            <div class="animate-on-scroll" style="flex: 1; display: flex; justify-content: center; min-width: 300px; padding: 2rem;">
+                <div class="floating-element" style="position: relative; width: 100%; max-width: 360px; margin: 0 auto;">
+                    <!-- Decorative offset gradient box -->
+                    <div style="position: absolute; top: 16px; left: 16px; right: -16px; bottom: -16px; background: linear-gradient(135deg, var(--accent-purple-start), var(--accent-orange-end)); border-radius: var(--radius-lg); opacity: 0.8; filter: blur(4px);"></div>
+                    
+                    <!-- Main Image -->
+                    <div style="position: relative; z-index: 1; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 24px 48px rgba(0,0,0,0.2); border: 2px solid var(--bg-secondary); background: var(--bg-secondary); aspect-ratio: 3/4;">
+                        <video src="./assets/intro_video.mp4" autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; object-position: center;"></video>
+                    </div>
                 </div>
             </div>
         </div>
@@ -84,10 +104,22 @@
                 <div class="animate-on-scroll">
                     <p class="section-label">About Me</p>
                     <h2 class="section-title">Who I Am</h2>
+                    
+                    <!-- Animated Profile Picture -->
+                    <div class="floating-element" style="position: relative; width: 100%; max-width: 280px; margin-top: 3rem;">
+                        <!-- Decorative offset gradient box -->
+                        <div style="position: absolute; top: 12px; left: 12px; right: -12px; bottom: -12px; background: linear-gradient(135deg, var(--accent-purple-start), var(--accent-orange-end)); border-radius: var(--radius-lg); opacity: 0.8; filter: blur(4px);"></div>
+                        
+                        <!-- Main Image -->
+                        <div style="position: relative; z-index: 1; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 24px 48px rgba(0,0,0,0.2); border: 2px solid var(--bg-secondary); background: var(--bg-secondary); aspect-ratio: 3/4;">
+                            <img src="./assets/my_profile.jpg" alt="Ayush Singh" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+                        </div>
+                    </div>
                 </div>
-                <div class="about-content animate-on-scroll">
+                <div class="about-content animate-on-scroll creative-frame">
                     <p>I bring a strong blend of technical expertise, strategic thinking, and people-oriented leadership. With over two years of hands-on experience at Nayara Energy, I've grown through roles in plant operations and project management.</p>
                     <p>Whether it's streamlining workflows, identifying inefficiencies, or aligning cross-functional efforts, I work with a clear focus on outcomes without losing sight of the people behind the process. I take pride in being the kind of person who brings clarity into chaos — balancing precision with flexibility.</p>
+                    <p style="font-weight: 500; color: var(--text-dark);">Now, as I pursue my MBA at IIT Kharagpur, I am combining my engineering discipline with business acumen. I am deeply passionate about exploring strategy consulting, product growth, and digital transformation—where complex data meets human-centric design to create scalable impact.</p>
                 </div>
             </div>
         </div>
@@ -141,7 +173,7 @@
 
                 <!-- Decodskills -->
                 <div class="exp-card animate-on-scroll">
-                    <div class="exp-logo-text" style="background: linear-gradient(135deg, #7c3aed, #a855f7);">DS</div>
+                    <div class="exp-logo-text" style="background: linear-gradient(135deg, var(--accent-purple-start), var(--accent-purple-end));">DS</div>
                     <div class="exp-content">
                         <div class="exp-header">
                             <div>
@@ -198,7 +230,7 @@
 
                 <!-- My Equation -->
                 <div class="exp-card animate-on-scroll">
-                    <div class="exp-logo-text" style="background: linear-gradient(135deg, #ea580c, #f97316);">ME</div>
+                    <div class="exp-logo-text" style="background: linear-gradient(135deg, var(--accent-orange-start), var(--accent-orange-end));">ME</div>
                     <div class="exp-content">
                         <div class="exp-header">
                             <div>
@@ -270,14 +302,14 @@
     <section id="contact" style="padding-bottom: 6rem;">
         <div class="container">
             <div class="contact-card animate-on-scroll">
-                <p class="section-label" style="color: #888; justify-content: center;">Contact Me</p>
-                <h2 style="font-size: 2.5rem; margin-bottom: 0.75rem;">Let's Connect</h2>
+                <p class="section-label" style="color: var(--text-muted); justify-content: center;">Contact Me</p>
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Let's Connect</h2>
                 <p>Open to discussing strategic roles, operations consulting, and new opportunities.</p>
                 <div class="contact-btns">
                     <a href="mailto:singhayush17846@gmail.com" class="btn btn-accent">Email Me ✉</a>
                     <a href="https://www.linkedin.com/in/0ayushsingh/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">LinkedIn ↗</a>
                 </div>
-                <p style="color: #666; font-size: 0.9rem;">
+                <p style="color: var(--text-body); font-size: 1rem;">
                     Mobile: <a href="tel:+918160648751" style="color: var(--accent-warm);">+91 8160648751</a>
                 </p>
             </div>
