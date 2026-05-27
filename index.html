@@ -18,7 +18,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Playfair+Display:ital,wght@0,600;1,500;1,600&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./styles/globals.css">
@@ -40,36 +40,41 @@
     </nav>
 
     <!-- ========== HERO ========== -->
-    <section id="hero" style="min-height: 100vh; display: flex; align-items: center; padding-top: 5rem;">
-        <div class="container" style="display: flex; align-items: center; justify-content: space-between; gap: 4rem; flex-wrap: wrap;">
-            <div class="animate-on-scroll" style="flex: 1; min-width: 300px;">
-                <p class="section-label">Welcome</p>
-                <h1 class="hero-title" style="font-size: 4.5rem; font-weight: 800; letter-spacing: -0.04em; margin-bottom: 2rem; line-height: 1.05;">
-                    Hello! I'm <br><span class="gradient-text">Ayush Singh</span>
-                </h1>
-                <p style="font-size: 1.25rem; max-width: 600px; margin-bottom: 2rem; color: var(--text-body);">
-                    MBA '27 Candidate at <strong style="color: var(--text-dark);">VGSoM, IIT Kharagpur</strong>. A performance-driven professional with interests in strategy, marketing, business growth, and problem-solving.<br>Curious and driven, with experience across projects, analytics, and operations in fast-paced environments.
-                </p>
-                <ul class="about-values" style="max-width: 500px; margin-bottom: 3rem;">
-                    <li>Lean Six Sigma Green Belt certified</li>
-                    <li>3+ years in plant operations & project management</li>
-                    <li>Passionate about operational excellence</li>
-                </ul>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <a href="#contact" class="btn btn-dark">Let's Talk</a>
-                    <a href="./assets/Ayush_Singh_Resume.pdf" target="_blank" class="btn btn-outline-dark">View Resume →</a>
-                </div>
+    <section id="hero" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; padding-top: 6rem; padding-bottom: 4rem; overflow: hidden;">
+        <!-- Background Radial Gradient (Warm Peach/Orange) -->
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80vw; height: 80vw; max-width: 800px; max-height: 800px; background: radial-gradient(circle, var(--accent-purple-start) 0%, transparent 70%); opacity: 0.25; z-index: 0; pointer-events: none; border-radius: 50%;"></div>
+        
+        <div class="container" style="position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; text-align: center;">
+            
+            <div class="animate-on-scroll" style="display: flex; align-items: center; gap: 0.75rem; background: var(--bg-secondary); padding: 0.5rem 1.25rem; border-radius: 50px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); margin-bottom: 2rem;">
+                <span style="width: 10px; height: 10px; background-color: var(--accent-warm); border-radius: 50%; display: inline-block; box-shadow: 0 0 8px var(--accent-warm);"></span>
+                <span style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-dark); font-family: var(--font-main);">Available for new opportunities</span>
             </div>
-            <div class="animate-on-scroll" style="flex: 1; display: flex; justify-content: center; min-width: 300px; padding: 2rem;">
-                <div class="floating-element" style="position: relative; width: 100%; max-width: 360px; margin: 0 auto;">
-                    <!-- Decorative offset gradient box -->
-                    <div style="position: absolute; top: 16px; left: 16px; right: -16px; bottom: -16px; background: linear-gradient(135deg, var(--accent-purple-start), var(--accent-orange-end)); border-radius: var(--radius-lg); opacity: 0.8; filter: blur(4px);"></div>
-                    
-                    <!-- Main Image -->
-                    <div style="position: relative; z-index: 1; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 24px 48px rgba(0,0,0,0.2); border: 2px solid var(--bg-secondary); background: var(--bg-secondary); aspect-ratio: 3/4;">
-                        <video src="./assets/intro_video.mp4" autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; object-position: center;"></video>
-                    </div>
+
+            <!-- Big Typography layered with image -->
+            <div style="position: relative; width: 100%; max-width: 1000px; margin: 0 auto; display: flex; flex-direction: column; align-items: center;">
+                <h1 class="hero-title animate-on-scroll" style="font-size: clamp(4rem, 10vw, 9rem); line-height: 0.85; margin-bottom: 0; position: relative; z-index: 2; width: 100%;">
+                    <span class="font-accent" style="display: block; font-size: clamp(3rem, 6vw, 6rem); color: var(--text-dark); margin-bottom: -1rem; text-align: left; padding-left: 10%;">Hey, there</span>
+                    <span style="display: block; letter-spacing: 0.02em; text-align: center;">I AM AYUSH</span>
+                </h1>
+                
+                <div class="floating-element" style="position: relative; z-index: 3; margin-top: -5%; margin-bottom: -5%; border-radius: 24px; overflow: hidden; box-shadow: 0 24px 48px rgba(0,0,0,0.15); border: 6px solid var(--bg-secondary); background: var(--bg-secondary); width: 100%; max-width: 320px; aspect-ratio: 3/4;">
+                    <video src="./assets/intro_video.mp4" autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover; object-position: center;"></video>
                 </div>
+
+                <h1 class="hero-title animate-on-scroll" style="font-size: clamp(3rem, 8vw, 7.5rem); line-height: 0.85; margin-top: 0; position: relative; z-index: 2; width: 100%;">
+                    <span style="display: block; letter-spacing: 0.02em; text-align: center;">STRATEGY & OPS</span>
+                    <span class="font-accent" style="display: block; font-size: clamp(2rem, 5vw, 5rem); color: var(--text-dark); margin-top: -1rem; text-align: right; padding-right: 10%; text-transform: none;">Professional.</span>
+                </h1>
+            </div>
+
+            <p class="animate-on-scroll" style="font-size: 1.15rem; max-width: 600px; margin: 4rem auto 2.5rem; color: var(--text-body); font-family: var(--font-main);">
+                MBA '27 Candidate at <strong style="color: var(--text-dark);">VGSoM, IIT Kharagpur</strong>. A performance-driven professional with experience across projects, analytics, and operations.
+            </p>
+            
+            <div class="animate-on-scroll" style="display: flex; gap: 1rem; justify-content: center;">
+                <a href="#contact" class="btn btn-dark" style="font-family: var(--font-main);">Let's Talk</a>
+                <a href="./assets/Ayush_Singh_Resume.pdf" target="_blank" class="btn btn-outline-dark" style="font-family: var(--font-main);">View Resume →</a>
             </div>
         </div>
     </section>
@@ -98,28 +103,63 @@
     </div>
 
     <!-- ========== ABOUT ========== -->
-    <section id="about">
+    <section id="about" style="padding: 6rem 0; background-color: var(--bg-secondary);">
         <div class="container">
-            <div class="about-grid">
-                <div class="animate-on-scroll">
-                    <p class="section-label">About Me</p>
-                    <h2 class="section-title">Who I Am</h2>
+            <div style="display: flex; flex-direction: column; gap: 4rem; align-items: center;">
+                <div class="animate-on-scroll" style="text-align: center; width: 100%;">
+                    <h2 class="section-title" style="font-size: clamp(2.5rem, 6vw, 4.5rem); margin-bottom: 2rem;">Turning Vision Into Reality</h2>
+                    <p class="font-accent" style="font-size: clamp(1.5rem, 3vw, 2.5rem); color: var(--text-dark); max-width: 800px; margin: 0 auto 4rem; line-height: 1.4;">"I bring a strong blend of technical expertise, strategic thinking, and people-oriented leadership."</p>
                     
-                    <!-- Animated Profile Picture -->
-                    <div class="floating-element" style="position: relative; width: 100%; max-width: 280px; margin-top: 3rem;">
-                        <!-- Decorative offset gradient box -->
-                        <div style="position: absolute; top: 12px; left: 12px; right: -12px; bottom: -12px; background: linear-gradient(135deg, var(--accent-purple-start), var(--accent-orange-end)); border-radius: var(--radius-lg); opacity: 0.8; filter: blur(4px);"></div>
-                        
-                        <!-- Main Image -->
-                        <div style="position: relative; z-index: 1; border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 24px 48px rgba(0,0,0,0.2); border: 2px solid var(--bg-secondary); background: var(--bg-secondary); aspect-ratio: 3/4;">
-                            <img src="./assets/my_profile.jpg" alt="Ayush Singh" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
-                        </div>
+                    <div class="about-stats-grid animate-on-scroll" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 3rem; text-align: left;">
+                    <!-- Pillar 1 -->
+                    <div class="stat-card" style="position: relative; border-top: 2px solid var(--text-dark); padding-top: 2rem; padding-bottom: 1rem;">
+                        <span style="font-family: var(--font-accent); font-size: 4rem; font-style: italic; color: var(--text-light); opacity: 0.4; position: absolute; top: -1.5rem; right: 0; line-height: 1; z-index: -1;">01</span>
+                        <h4 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-dark); text-transform: uppercase; letter-spacing: 0.05em;">Business Strategy</h4>
+                        <p style="font-size: 1.05rem; color: var(--text-body); font-family: var(--font-main); line-height: 1.6;">Identifying high-potential markets, evaluating entry barriers, and shaping go-to-market strategies that drive scalable growth.</p>
+                    </div>
+                    <!-- Pillar 2 -->
+                    <div class="stat-card" style="position: relative; border-top: 2px solid var(--text-dark); padding-top: 2rem; padding-bottom: 1rem;">
+                        <span style="font-family: var(--font-accent); font-size: 4rem; font-style: italic; color: var(--text-light); opacity: 0.4; position: absolute; top: -1.5rem; right: 0; line-height: 1; z-index: -1;">02</span>
+                        <h4 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-dark); text-transform: uppercase; letter-spacing: 0.05em;">Operations Excellence</h4>
+                        <p style="font-size: 1.05rem; color: var(--text-body); font-family: var(--font-main); line-height: 1.6;">Streamlining complex workflows, executing critical projects, and delivering operational efficiency in fast-paced, high-stakes environments.</p>
+                    </div>
+                    <!-- Pillar 3 -->
+                    <div class="stat-card" style="position: relative; border-top: 2px solid var(--text-dark); padding-top: 2rem; padding-bottom: 1rem;">
+                        <span style="font-family: var(--font-accent); font-size: 4rem; font-style: italic; color: var(--text-light); opacity: 0.4; position: absolute; top: -1.5rem; right: 0; line-height: 1; z-index: -1;">03</span>
+                        <h4 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-dark); text-transform: uppercase; letter-spacing: 0.05em;">Cross-Functional Leadership</h4>
+                        <p style="font-size: 1.05rem; color: var(--text-body); font-family: var(--font-main); line-height: 1.6;">Bridging the gap between technical capabilities and business objectives to lead teams effectively and execute long-term strategic visions.</p>
                     </div>
                 </div>
-                <div class="about-content animate-on-scroll creative-frame">
-                    <p>I bring a strong blend of technical expertise, strategic thinking, and people-oriented leadership. With over two years of hands-on experience at Nayara Energy, I've grown through roles in plant operations and project management.</p>
-                    <p>Whether it's streamlining workflows, identifying inefficiencies, or aligning cross-functional efforts, I work with a clear focus on outcomes without losing sight of the people behind the process. I take pride in being the kind of person who brings clarity into chaos — balancing precision with flexibility.</p>
-                    <p style="font-weight: 500; color: var(--text-dark);">Now, as I pursue my MBA at IIT Kharagpur, I am combining my engineering discipline with business acumen. I am deeply passionate about exploring strategy consulting, product growth, and digital transformation—where complex data meets human-centric design to create scalable impact.</p>
+                </div>
+
+                <!-- Profile Picture & Bio Section -->
+                <div class="animate-on-scroll" style="display: flex; flex-wrap: wrap; gap: 4rem; align-items: center; margin-top: 4rem; width: 100%; justify-content: center;">
+                    <!-- Image Wrapper -->
+                    <div style="position: relative; width: 100%; max-width: 400px; margin-bottom: 2rem;">
+                        <!-- Image -->
+                        <div style="aspect-ratio: 3/4; border-radius: 24px; overflow: hidden; box-shadow: 0 24px 48px rgba(0,0,0,0.1); border: 1px solid var(--border-light);">
+                            <img src="./assets/my_profile.jpg" alt="Ayush Singh" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;">
+                        </div>
+                        <!-- Floating badge -->
+                        <div class="floating-element" style="position: absolute; bottom: -20px; right: -20px; background: var(--bg-secondary); border-radius: 50%; box-shadow: 0 24px 48px rgba(0,0,0,0.15); width: 120px; height: 120px; display: flex; flex-direction: column; justify-content: center; align-items: center; border: 4px solid var(--bg-primary); z-index: 2;">
+                            <span style="font-family: var(--font-heading); font-size: 2.5rem; font-weight: 700; color: var(--accent-warm); line-height: 1; margin-bottom: 0.25rem;">3+</span>
+                            <span style="font-size: 0.75rem; text-align: center; font-weight: 600; text-transform: uppercase; color: var(--text-dark); letter-spacing: 0.05em;">Years<br>Exp.</span>
+                        </div>
+                    </div>
+
+                    <!-- Bio Content -->
+                    <div style="flex: 1; min-width: 300px; max-width: 600px;">
+                        <h3 style="font-family: var(--font-heading); font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 1.5rem; color: var(--text-dark); text-transform: uppercase; line-height: 1.1;">Beyond The Resume</h3>
+                        <p style="font-size: 1.1rem; color: var(--text-body); line-height: 1.6; margin-bottom: 1.5rem; font-family: var(--font-main);">
+                            With over two years of hands-on experience at Nayara Energy, I've grown through roles in plant operations and project management. Whether it's streamlining workflows, identifying inefficiencies, or aligning cross-functional efforts, I work with a clear focus on outcomes without losing sight of the people behind the process.
+                        </p>
+                        <p style="font-size: 1.1rem; color: var(--text-body); line-height: 1.6; margin-bottom: 1.5rem; font-family: var(--font-main);">
+                            I take pride in being the kind of person who brings clarity into chaos — balancing precision with flexibility.
+                        </p>
+                        <p style="font-size: 1.1rem; font-weight: 500; color: var(--text-dark); line-height: 1.6; font-family: var(--font-main); border-left: 3px solid var(--accent-warm); padding-left: 1rem;">
+                            Now, as I pursue my MBA at IIT Kharagpur, I am combining my engineering discipline with business acumen. I am deeply passionate about exploring strategy consulting, product growth, and digital transformation—where complex data meets human-centric design to create scalable impact.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -138,108 +178,130 @@
             <div class="exp-stack">
 
                 <!-- TGHC -->
-                <div class="exp-card animate-on-scroll">
-                    <div class="exp-logo">
-                        <img src="./assets/logos/tghc.webp" alt="TGHC Logo">
-                    </div>
+                <div class="exp-list-item animate-on-scroll">
+                    <div class="exp-duration">2026</div>
                     <div class="exp-content">
                         <div class="exp-header">
+                            <div class="exp-logo">
+                                <img src="./assets/logos/tghc.webp" alt="TGHC Logo">
+                            </div>
                             <div>
                                 <h3 class="exp-title">Strategy Consultant (Live Project)</h3>
                                 <p class="exp-company">TGHC — The Good Health Clinic</p>
                             </div>
-                            <span class="exp-duration">Jan 2026 – Apr 2026</span>
                         </div>
                         <p class="exp-desc">Worked on a strategic consulting project focused on international expansion for a Longevity Clinic business model. Assessed high-potential global markets, conducted in-depth market sizing and segmentation, and evaluated regulatory entry barriers across geographies.</p>
+                    </div>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Strategy</span>
+                        <span class="exp-tag">Market Entry</span>
+                        <span class="exp-tag">Market Sizing</span>
                     </div>
                 </div>
 
                 <!-- LeMiCi IQ -->
-                <div class="exp-card animate-on-scroll">
-                    <div class="exp-logo">
-                        <img src="./assets/logos/lemici.jpg" alt="LeMiCi IQ Logo">
-                    </div>
+                <div class="exp-list-item animate-on-scroll">
+                    <div class="exp-duration">2025–26</div>
                     <div class="exp-content">
                         <div class="exp-header">
+                            <div class="exp-logo">
+                                <img src="./assets/logos/lemici.jpg" alt="LeMiCi IQ Logo">
+                            </div>
                             <div>
                                 <h3 class="exp-title">Market Research Intern</h3>
                                 <p class="exp-company">LeMiCi IQ</p>
                             </div>
-                            <span class="exp-duration">Dec 2025 – Mar 2026</span>
                         </div>
                         <p class="exp-desc">Conducted multi-sector market research using structured frameworks. Developed a comprehensive Jewellery Sector Ontology covering 20+ value chain elements, improving research efficiency by ~25%.</p>
+                    </div>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Market Research</span>
+                        <span class="exp-tag">Ontology</span>
+                        <span class="exp-tag">Analysis</span>
                     </div>
                 </div>
 
                 <!-- Decodskills -->
-                <div class="exp-card animate-on-scroll">
-                    <div class="exp-logo-text" style="background: linear-gradient(135deg, var(--accent-purple-start), var(--accent-purple-end));">DS</div>
+                <div class="exp-list-item animate-on-scroll">
+                    <div class="exp-duration">2026</div>
                     <div class="exp-content">
                         <div class="exp-header">
+                            <div class="exp-logo-text" style="background: linear-gradient(135deg, var(--accent-purple-start), var(--accent-purple-end));">DS</div>
                             <div>
                                 <h3 class="exp-title">Strategy & Growth Consultant (Live Project)</h3>
                                 <p class="exp-company">Decodskills</p>
                             </div>
-                            <span class="exp-duration">Jan 2026 – Feb 2026</span>
                         </div>
                         <p class="exp-desc">Conducted SME market research to identify automation gaps. Designed and validated end-to-end AI workflows for small businesses, delivering actionable insights through structured reports.</p>
+                    </div>
+                    <div class="exp-tags">
+                        <span class="exp-tag">AI Workflows</span>
+                        <span class="exp-tag">Automation</span>
+                        <span class="exp-tag">SME Strategy</span>
                     </div>
                 </div>
 
                 <!-- IIT Kharagpur Admissions -->
-                <div class="exp-card animate-on-scroll">
-                    <div class="exp-logo">
-                        <img src="./assets/logos/iitkgp.svg" alt="IIT Kharagpur Logo">
-                    </div>
+                <div class="exp-list-item animate-on-scroll">
+                    <div class="exp-duration">2025–Present</div>
                     <div class="exp-content">
                         <div class="exp-header">
+                            <div class="exp-logo">
+                                <img src="./assets/logos/iitkgp.svg" alt="IIT Kharagpur Logo">
+                            </div>
                             <div>
                                 <h3 class="exp-title">Coordinator, Admission Committee</h3>
                                 <p class="exp-company">VGSoM, IIT Kharagpur</p>
                             </div>
-                            <span class="exp-duration">Aug 2025 – Present</span>
                         </div>
                         <p class="exp-desc">Responsible for facilitating the admission process in liaison with the faculty advisor, interacting with MBA aspirants, and helping them make informed decisions effectively.</p>
+                    </div>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Leadership</span>
+                        <span class="exp-tag">Admissions</span>
+                        <span class="exp-tag">Communication</span>
                     </div>
                 </div>
 
                 <!-- Nayara Energy -->
-                <div class="exp-card animate-on-scroll">
-                    <div class="exp-logo">
-                        <img src="./assets/logos/nayara.jpg" alt="Nayara Energy Logo">
-                    </div>
+                <div class="exp-list-item animate-on-scroll">
+                    <div class="exp-duration">2022–25</div>
                     <div class="exp-content">
                         <div class="exp-header">
+                            <div class="exp-logo">
+                                <img src="./assets/logos/nayara.jpg" alt="Nayara Energy Logo">
+                            </div>
                             <div>
                                 <h3 class="exp-title">Assistant Manager</h3>
                                 <p class="exp-company">Nayara Energy</p>
                             </div>
-                            <span class="exp-duration">Jul 2022 – Jul 2025</span>
                         </div>
-                        <p class="exp-desc">Managed Delayed Coker Unit (DCU) operations and contributed to Nayara's first petrochemical transition initiative. Key participant in the Fluidized Catalytic Cracker (FCC) revamp and successful commissioning of the Propylene Recovery Unit (PRU).</p>
-                        <div class="exp-awards">
-                            <h5>Awards & Recognitions</h5>
-                            <ul>
-                                <li>Safety Champion (June–Dec 2024)</li>
-                                <li>"GEM" Token of Appreciation for achieving zero steam leak in DCU</li>
-                                <li>Near Miss Reporting – 2nd Runner-up (2024)</li>
-                            </ul>
-                        </div>
+                        <p class="exp-desc">Managed Delayed Coker Unit (DCU) operations and contributed to Nayara's first petrochemical transition initiative. Key participant in the Fluidized Catalytic Cracker (FCC) revamp and successful commissioning of the Propylene Recovery Unit (PRU). Recognized as Safety Champion and awarded "GEM" Token of Appreciation for achieving zero steam leak in DCU.</p>
+                    </div>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Plant Operations</span>
+                        <span class="exp-tag">Project Mgmt</span>
+                        <span class="exp-tag">Safety</span>
                     </div>
                 </div>
 
                 <!-- My Equation -->
-                <div class="exp-card animate-on-scroll">
-                    <div class="exp-logo-text" style="background: linear-gradient(135deg, var(--accent-orange-start), var(--accent-orange-end));">ME</div>
+                <div class="exp-list-item animate-on-scroll">
+                    <div class="exp-duration">2023</div>
                     <div class="exp-content">
                         <div class="exp-header">
+                            <div class="exp-logo-text" style="background: linear-gradient(135deg, var(--accent-orange-start), var(--accent-orange-end));">ME</div>
                             <div>
                                 <h3 class="exp-title">Team Leader (Sales & Marketing)</h3>
                                 <p class="exp-company">My Equation</p>
                             </div>
-                            <span class="exp-duration">Jun 2023 – Sep 2023</span>
                         </div>
                         <p class="exp-desc">Successfully managed a team of 20 interns, organized collaboration meetings with various organizations, and implemented impactful email marketing and funneling techniques resulting in heightened customer engagement.</p>
+                    </div>
+                    <div class="exp-tags">
+                        <span class="exp-tag">Sales</span>
+                        <span class="exp-tag">Marketing</span>
+                        <span class="exp-tag">Leadership</span>
                     </div>
                 </div>
 
@@ -257,61 +319,127 @@
                 <h2 class="section-title">Education & Credentials</h2>
             </div>
 
-            <div class="edu-grid">
-                <div class="edu-card animate-on-scroll">
-                    <div class="edu-logo">
-                        <img src="./assets/logos/iitkgp.svg" alt="IIT Kharagpur Logo">
-                    </div>
-                    <div class="edu-content">
-                        <h3>Master of Business Administration (MBA)</h3>
-                        <h4>VGSoM, IIT Kharagpur · Class of 2027</h4>
-                        <p>Focusing on operational strategy and business management to complement technical engineering roots.</p>
+            <div class="exp-stack">
+                <!-- IIT Kharagpur -->
+                <div class="exp-list-item animate-on-scroll">
+                    <div class="exp-duration">Class of 2027</div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div class="exp-logo">
+                                <img src="./assets/logos/iitkgp.svg" alt="IIT Kharagpur Logo">
+                            </div>
+                            <div>
+                                <h3 class="exp-title">Master of Business Administration (MBA)</h3>
+                                <p class="exp-company">VGSoM, IIT Kharagpur</p>
+                            </div>
+                        </div>
+                        <p class="exp-desc">Focusing on operational strategy and business management to complement technical engineering roots.</p>
                     </div>
                 </div>
 
-                <div class="edu-card animate-on-scroll">
-                    <div class="edu-logo">
-                        <img src="./assets/logos/vit.svg" alt="VIT Logo">
-                    </div>
-                    <div class="edu-content">
-                        <h3>B.Tech in Chemical Engineering</h3>
-                        <h4>Vellore Institute of Technology (VIT) · Class of 2022</h4>
-                        <p>Built a strong foundation in process engineering, plant operations, and analytical problem-solving.</p>
+                <div class="exp-list-item animate-on-scroll">
+                    <div class="exp-duration">Class of 2022</div>
+                    <div class="exp-content">
+                        <div class="exp-header">
+                            <div class="exp-logo">
+                                <img src="./assets/logos/vit.svg" alt="VIT Logo">
+                            </div>
+                            <div>
+                                <h3 class="exp-title">B.Tech in Chemical Engineering</h3>
+                                <p class="exp-company">Vellore Institute of Technology (VIT)</p>
+                            </div>
+                        </div>
+                        <p class="exp-desc">Built a strong foundation in process engineering, plant operations, and analytical problem-solving.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Certifications -->
-            <div class="animate-on-scroll" style="margin-top: 3rem;">
-                <h3 style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600;">Certifications & Top Skills</h3>
-                <div class="cert-grid">
-                    <span class="cert-tag">Lean Six Sigma Green Belt</span>
-                    <span class="cert-tag">Bloomberg Market Concepts</span>
-                    <span class="cert-tag">Product Management Bootcamp</span>
-                    <span class="cert-tag">Career Essentials in Generative AI</span>
-                    <span class="cert-tag">Fundamentals of Digital Marketing</span>
-                    <span class="cert-tag">Financial Modeling</span>
+            <!-- ========== SKILLS & CERTIFICATIONS ========== -->
+    <section id="certifications" style="padding-top: 4rem; padding-bottom: 2rem;">
+        <div class="container animate-on-scroll">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
+                
+                <!-- Certifications -->
+                <div>
+                    <h2 class="section-title" style="font-family: var(--font-heading); font-size: 1.25rem; text-transform: uppercase; color: var(--text-dark); margin-bottom: 2rem; border-bottom: 2px solid var(--text-dark); padding-bottom: 1rem;">Certifications</h2>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 0.5rem;">
+                            <span style="font-family: var(--font-main); font-weight: 500; color: var(--text-dark);">Lean Six Sigma Green Belt</span>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 0.5rem;">
+                            <span style="font-family: var(--font-main); font-weight: 500; color: var(--text-dark);">Bloomberg Market Concepts</span>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 0.5rem;">
+                            <span style="font-family: var(--font-main); font-weight: 500; color: var(--text-dark);">Product Management Bootcamp</span>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 0.5rem;">
+                            <span style="font-family: var(--font-main); font-weight: 500; color: var(--text-dark);">Career Essentials in Gen AI</span>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 0.5rem;">
+                            <span style="font-family: var(--font-main); font-weight: 500; color: var(--text-dark);">Fundamentals of Digital Marketing</span>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 0.5rem;">
+                            <span style="font-family: var(--font-main); font-weight: 500; color: var(--text-dark);">Financial Modeling</span>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Core Competencies -->
+                <div>
+                    <h2 class="section-title" style="font-family: var(--font-heading); font-size: 1.25rem; text-transform: uppercase; color: var(--text-dark); margin-bottom: 2rem; border-bottom: 2px solid var(--text-dark); padding-bottom: 1rem;">Core Competencies</h2>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+                        <span class="cert-tag" style="background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 4px;">Market Sizing & Entry Strategy</span>
+                        <span class="cert-tag" style="background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 4px;">Operations Management</span>
+                        <span class="cert-tag" style="background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 4px;">Process Optimization</span>
+                        <span class="cert-tag" style="background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 4px;">Cross-Functional Leadership</span>
+                        <span class="cert-tag" style="background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 4px;">B2B Sales & Marketing</span>
+                        <span class="cert-tag" style="background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 4px;">Financial Analysis</span>
+                        <span class="cert-tag" style="background: var(--bg-secondary); border: 1px solid var(--border-light); border-radius: 4px;">Data Visualization</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Tech -->
+                <div>
+                    <h2 class="section-title" style="font-family: var(--font-heading); font-size: 1.25rem; text-transform: uppercase; color: var(--text-dark); margin-bottom: 2rem; border-bottom: 2px solid var(--text-dark); padding-bottom: 1rem;">Tools & Software</h2>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+                        <span class="cert-tag" style="background: var(--text-dark); color: white; border: none; border-radius: 4px;">Microsoft Excel</span>
+                        <span class="cert-tag" style="background: var(--text-dark); color: white; border: none; border-radius: 4px;">PowerPoint</span>
+                        <span class="cert-tag" style="background: var(--text-dark); color: white; border: none; border-radius: 4px;">PowerBI / Tableau</span>
+                        <span class="cert-tag" style="background: var(--text-dark); color: white; border: none; border-radius: 4px;">Python</span>
+                        <span class="cert-tag" style="background: var(--text-dark); color: white; border: none; border-radius: 4px;">SQL</span>
+                        <span class="cert-tag" style="background: var(--text-dark); color: white; border: none; border-radius: 4px;">Google Analytics</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
+
 
     <div class="container"><div class="section-divider"></div></div>
 
     <!-- ========== CONTACT ========== -->
     <section id="contact" style="padding-bottom: 6rem;">
         <div class="container">
-            <div class="contact-card animate-on-scroll">
-                <p class="section-label" style="color: var(--text-muted); justify-content: center;">Contact Me</p>
-                <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Let's Connect</h2>
-                <p>Open to discussing strategic roles, operations consulting, and new opportunities.</p>
-                <div class="contact-btns">
-                    <a href="mailto:singhayush17846@gmail.com" class="btn btn-accent">Email Me ✉</a>
-                    <a href="https://www.linkedin.com/in/0ayushsingh/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">LinkedIn ↗</a>
+            <div class="animate-on-scroll" style="background: #0a0a0a; border: none; position: relative; overflow: hidden; padding: 8rem 2rem; border-radius: 32px; box-shadow: 0 32px 64px rgba(0,0,0,0.1); text-align: center;">
+                <!-- Decorative Gradients -->
+                <div style="position: absolute; top: -50%; left: -50%; width: 150%; height: 150%; background: radial-gradient(circle at center, rgba(255,126,103,0.15) 0%, transparent 50%); z-index: 0; pointer-events: none;"></div>
+                <div style="position: absolute; bottom: -50%; right: -50%; width: 150%; height: 150%; background: radial-gradient(circle at center, rgba(255,184,108,0.1) 0%, transparent 50%); z-index: 0; pointer-events: none;"></div>
+                
+                <div style="position: relative; z-index: 1;">
+                    <p style="font-family: var(--font-accent); font-style: italic; font-size: 1.5rem; color: var(--accent-warm); margin-bottom: 1.5rem;">Ready to build something great?</p>
+                    <h2 style="font-family: var(--font-heading); font-size: clamp(4rem, 10vw, 8rem); margin-bottom: 1.5rem; color: #ffffff; text-transform: uppercase; line-height: 1; letter-spacing: 0.02em;">LET'S CONNECT</h2>
+                    <p style="color: rgba(255,255,255,0.7); max-width: 500px; margin: 0 auto 3rem; font-size: 1.25rem; font-family: var(--font-main); line-height: 1.6;">Open to discussing strategic roles, operations consulting, and new opportunities.</p>
+                    
+                    <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
+                        <a href="mailto:singhayush17846@gmail.com" class="btn" style="background: #ffffff; color: #000000; padding: 1.2rem 3rem; font-weight: 700; border-radius: 50px; font-size: 1.1rem; text-decoration: none; transition: transform 0.3s ease;">Email Me ✉</a>
+                        <a href="https://www.linkedin.com/in/0ayushsingh/" target="_blank" rel="noopener noreferrer" class="btn" style="background: transparent; color: #ffffff; border: 1px solid rgba(255,255,255,0.3); padding: 1.2rem 3rem; font-weight: 700; border-radius: 50px; font-size: 1.1rem; text-decoration: none; transition: background 0.3s ease;">LinkedIn ↗</a>
+                    </div>
+                    
+                    <p style="color: rgba(255,255,255,0.5); font-size: 1.1rem; font-family: var(--font-main);">
+                        Mobile: <a href="tel:+918160648751" style="color: var(--accent-warm); text-decoration: none; font-weight: 600;">+91 8160648751</a>
+                    </p>
                 </div>
-                <p style="color: var(--text-body); font-size: 1rem;">
-                    Mobile: <a href="tel:+918160648751" style="color: var(--accent-warm);">+91 8160648751</a>
-                </p>
             </div>
         </div>
     </section>
