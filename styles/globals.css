@@ -4,26 +4,26 @@
   --bg-secondary: #ffffff;
   --bg-dark: #000000;
   --bg-dark-card: #f4f3f0;
-  --text-dark: #000000;
-  --text-body: #333333;
-  --text-light: #777777;
+  --text-dark: #ffffff; /* Inverted for dark 3D background */
+  --text-body: #e2e8f0;
+  --text-light: #94a3b8;
   --text-white: #ffffff;
-  --accent-warm: #ff8c42;
-  --accent-blue: #3b82f6;
-  --border-light: #e5e5e5;
-  --border-dark: #d5d5d5;
+  --accent-warm: #ff9f5a; /* Brighter glowing peach */
+  --accent-blue: #60a5fa; /* Brighter cyan/blue */
+  --border-light: rgba(255,255,255,0.1);
+  --border-dark: rgba(255,255,255,0.2);
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
-  --text-muted: #888888;
-  --text-subtle: #999999;
-  --btn-dark-hover: #222222;
-  --btn-outline-border: #bbbbbb;
-  --accent-purple-start: #ffb75e; /* shifted to warm peachy tones */
-  --accent-purple-end: #ed8f03;
-  --accent-orange-start: #ff8c42;
-  --accent-orange-end: #d15800;
-  --accent-warm-hover: #d4702f;
+  --text-muted: #64748b;
+  --text-subtle: #475569;
+  --btn-dark-hover: #333333;
+  --btn-outline-border: rgba(255,255,255,0.3);
+  --accent-purple-start: #ffb75e;
+  --accent-purple-end: #ff9f5a;
+  --accent-orange-start: #ff9f5a;
+  --accent-orange-end: #ff7b24;
+  --accent-warm-hover: #ffad76;
 
   --font-main: 'Outfit', 'Inter', sans-serif;
   --font-heading: 'Oswald', sans-serif;
