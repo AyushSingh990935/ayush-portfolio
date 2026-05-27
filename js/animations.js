@@ -40,14 +40,25 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     // 2. VANILLA TILT (3D Cards)
     // ==========================================
-    const tiltElements = document.querySelectorAll('.exp-card, .edu-card, .contact-card-premium');
+    const tiltElements = document.querySelectorAll('.exp-list-item, .edu-card, .contact-card-premium');
     if (typeof VanillaTilt !== 'undefined' && window.innerWidth > 768) {
+        // Apply 3D perspective to elements to make them pop out
+        tiltElements.forEach(el => {
+            el.style.transformStyle = 'preserve-3d';
+            // Also apply translateZ to direct children for the 3D pop effect
+            Array.from(el.children).forEach(child => {
+                if(child.tagName !== 'SPLINE-VIEWER' && !child.style.zIndex) {
+                    child.style.transform = 'translateZ(40px)';
+                    child.style.transition = 'transform 0.3s ease-out';
+                }
+            });
+        });
         VanillaTilt.init(tiltElements, {
-            max: 5,
+            max: 12,
             speed: 400,
             glare: true,
-            "max-glare": 0.1,
-            scale: 1.02
+            "max-glare": 0.15,
+            scale: 1.05
         });
     }
 
