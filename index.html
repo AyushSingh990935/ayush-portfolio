@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="./styles/animations.css">
 </head>
 <body>
+    <!-- 3D Interactive Background -->
+    <canvas id="bg-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -10; pointer-events: none;"></canvas>
 
     <!-- ========== NAVIGATION ========== -->
     <nav class="navbar" id="navbar">
@@ -469,6 +471,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
     <!-- Scripts -->
+    <script type="module" src="./js/webgl-bg.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/animations.js"></script>
 </body>
