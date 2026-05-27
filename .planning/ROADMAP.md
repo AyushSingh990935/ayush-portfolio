@@ -76,7 +76,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 05-01: Implement Three.js environment, procedural stairs, and GSAP ScrollTrigger camera logic.
+- [x] 05-01: Implement Three.js environment, procedural stairs, and GSAP ScrollTrigger camera logic.
 
 ## Progress
 
@@ -89,4 +89,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
 | 2. Core Content Sections | 2/2 | Complete | Yes |
 | 3. Polish & Interactivity | 1/1 | Complete | Yes |
 | 4. 3D & Animation Overhaul | 1/1 | Complete | Yes |
-| 5. Immersive 3D Staircase | 0/1 | Not Started | No |
+| 5. Immersive 3D Staircase | 1/1 | Complete | Yes |
