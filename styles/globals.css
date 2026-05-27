@@ -43,15 +43,18 @@ html {
 
 body {
   font-family: var(--font-main);
-  background-color: var(--bg-primary);
-  /* The dot pattern remains but subtler */
-  background-image: radial-gradient(rgba(0,0,0,0.05) 1px, transparent 1px);
-  background-size: 24px 24px;
-  color: var(--text-dark);
-  min-height: 100vh;
-  line-height: 1.6;
+  background-color: #050505; /* Deep dark base for 3D */
+  color: var(--text-white); /* Enforce white text globally over dark 3D ecosystem */
   overflow-x: hidden;
 }
+
+/* Base text overrides for readability on dark 3D background */
+h1, h2, h3, h4, h5, h6, p, span {
+  color: #ffffff;
+}
+
+.text-muted { color: #aaaaaa; }
+.text-subtle { color: #888888; }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
@@ -165,6 +168,16 @@ ul {
 section {
   padding: 6rem 0;
   position: relative;
+  z-index: 10;
+}
+
+/* Premium Glassmorphism (Peachweb Style) */
+.glass-panel {
+  background: rgba(20, 20, 20, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 32px 64px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.1);
 }
 
 .section-label {
@@ -266,6 +279,43 @@ section {
 
 .exp-list-item:hover {
   background: linear-gradient(90deg, transparent, rgba(0,0,0,0.02), transparent);
+}
+
+.exp-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+  position: relative;
+  overflow: visible;
+  transform-style: preserve-3d;
+}
+
+.exp-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  border-radius: var(--radius-lg);
+  pointer-events: none;
+  border: 1px solid transparent;
+  transition: border-color 0.4s ease;
+  z-index: 0;
+}
+
+.exp-card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+.exp-card:hover::before {
+  border-color: rgba(255, 184, 108, 0.5);
+}
+
+/* True 3D pop out for content */
+.exp-card > * {
+  transform: translateZ(30px);
+  position: relative;
+  z-index: 2;
 }
 
 .exp-logo {
@@ -375,19 +425,19 @@ section {
 }
 
 .edu-card {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-light);
+  padding: 2.5rem;
   border-radius: var(--radius-lg);
-  padding: 2rem;
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  transform-style: preserve-3d;
 }
 
 .edu-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+  transform: translateY(-5px) scale(1.02);
+}
+
+.edu-card > * {
+  transform: translateZ(40px);
 }
 
 .edu-logo {

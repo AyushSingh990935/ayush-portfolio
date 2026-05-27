@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="./styles/animations.css">
 </head>
 <body>
+    <!-- 3D WebGL Ecosystem Background -->
+    <canvas id="webgl-canvas" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -10; pointer-events: none;"></canvas>
 
     <!-- ========== NAVIGATION ========== -->
     <nav class="navbar" id="navbar">
@@ -40,7 +42,7 @@
     </nav>
 
     <!-- ========== HERO ========== -->
-    <section id="hero" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; padding-top: 6rem; padding-bottom: 4rem; overflow: hidden; background: #faf9f6;">
+    <section id="hero" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; padding-top: 6rem; padding-bottom: 4rem; overflow: hidden; background: transparent;">
 
         <!-- Background Radial Gradient (Warm Peach/Orange) Overlay -->
         <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80vw; height: 80vw; max-width: 800px; max-height: 800px; background: radial-gradient(circle, rgba(255,184,108,0.2) 0%, transparent 70%); z-index: 1; pointer-events: none; border-radius: 50%;"></div>
@@ -104,7 +106,7 @@
     </div>
 
     <!-- ========== ABOUT ========== -->
-    <section id="about" style="padding: 6rem 0; background-color: var(--bg-secondary);">
+    <section id="about" style="background: transparent;">
         <div class="container">
             <div style="display: flex; flex-direction: column; gap: 4rem; align-items: center;">
                 <div class="animate-on-scroll" style="text-align: center; width: 100%;">
@@ -169,7 +171,7 @@
     <div class="container"><div class="section-divider"></div></div>
 
     <!-- ========== EXPERIENCE ========== -->
-    <section id="experience">
+    <section id="experience" style="background: transparent;">
         <div class="container">
             <div class="animate-on-scroll">
                 <p class="section-label">My Experience</p>
@@ -179,7 +181,7 @@
             <div class="exp-stack">
 
                 <!-- TGHC -->
-                <div class="exp-list-item animate-on-scroll">
+                <div class="exp-card animate-on-scroll glass-panel" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="1000">
                     <div class="exp-duration">2026</div>
                     <div class="exp-content">
                         <div class="exp-header">
@@ -201,7 +203,7 @@
                 </div>
 
                 <!-- LeMiCi IQ -->
-                <div class="exp-list-item animate-on-scroll">
+                <div class="exp-card animate-on-scroll glass-panel" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="1000">
                     <div class="exp-duration">2025–26</div>
                     <div class="exp-content">
                         <div class="exp-header">
@@ -223,7 +225,7 @@
                 </div>
 
                 <!-- Decodskills -->
-                <div class="exp-list-item animate-on-scroll">
+                <div class="exp-card animate-on-scroll glass-panel" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="1000">
                     <div class="exp-duration">2026</div>
                     <div class="exp-content">
                         <div class="exp-header">
@@ -243,7 +245,7 @@
                 </div>
 
                 <!-- IIT Kharagpur Admissions -->
-                <div class="exp-list-item animate-on-scroll">
+                <div class="exp-card animate-on-scroll glass-panel" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="1000">
                     <div class="exp-duration">2025–Present</div>
                     <div class="exp-content">
                         <div class="exp-header">
@@ -265,7 +267,7 @@
                 </div>
 
                 <!-- Nayara Energy -->
-                <div class="exp-list-item animate-on-scroll">
+                <div class="exp-card animate-on-scroll glass-panel" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="1000">
                     <div class="exp-duration">2022–25</div>
                     <div class="exp-content">
                         <div class="exp-header">
@@ -287,7 +289,7 @@
                 </div>
 
                 <!-- My Equation -->
-                <div class="exp-list-item animate-on-scroll">
+                <div class="exp-card animate-on-scroll glass-panel" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-perspective="1000">
                     <div class="exp-duration">2023</div>
                     <div class="exp-content">
                         <div class="exp-header">
@@ -313,7 +315,7 @@
     <div class="container"><div class="section-divider"></div></div>
 
     <!-- ========== EDUCATION ========== -->
-    <section id="education">
+    <section id="education" style="background: transparent;">
         <div class="container">
             <div class="animate-on-scroll">
                 <p class="section-label">Education</p>
@@ -420,14 +422,9 @@
     <div class="container"><div class="section-divider"></div></div>
 
     <!-- ========== CONTACT ========== -->
-    <section id="contact" style="padding-bottom: 6rem;">
+    <section id="contact" style="padding-bottom: 6rem; background: transparent;">
         <div class="container">
-            <div class="contact-card-premium animate-on-scroll" style="background: #0a0a0a; border: none; position: relative; overflow: hidden; padding: 8rem 2rem; border-radius: 32px; box-shadow: 0 32px 64px rgba(0,0,0,0.1); text-align: center;">
-                
-                <!-- 3D Spline Background -->
-                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; opacity: 0.6; pointer-events: auto;">
-                    <spline-viewer url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode"></spline-viewer>
-                </div>
+            <div class="contact-card-premium animate-on-scroll glass-panel" style="position: relative; overflow: hidden; padding: 8rem 2rem; border-radius: 32px; text-align: center;" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-perspective="1000">
 
                 <!-- Decorative Gradients Overlay -->
                 <div style="position: absolute; top: -50%; left: -50%; width: 150%; height: 150%; background: radial-gradient(circle at center, rgba(255,126,103,0.15) 0%, transparent 50%); z-index: 1; pointer-events: none;"></div>
@@ -463,7 +460,7 @@
     <div class="cursor-outline"></div>
 
     <!-- 3D & Animation Libraries -->
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.94/build/spline-viewer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -471,5 +468,6 @@
     <!-- Scripts -->
     <script src="./js/main.js"></script>
     <script src="./js/animations.js"></script>
+    <script src="./js/webgl-core.js"></script>
 </body>
 </html>

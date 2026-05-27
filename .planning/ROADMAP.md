@@ -11,6 +11,15 @@ Building a premium, interactive personal portfolio website for Ayush Singh from 
 - [x] **Phase 3: Polish & Interactivity** - Refine the "anti-gravity" animations, parallax scrolling, and finalize contact elements.
 - [ ] **Phase 4: 3D & Animation Overhaul (Peachweb Inspiration)** - Introduce Spline 3D scenes, GSAP scroll triggers, and spatial interactions.
 
+## Active Phase: Phase 6 - Peachweb 3D Ecosystem
+
+Phase 6 implements the massive architectural overhaul to transform the site into an Awwwards-style immersive 3D experience with an interactive WebGL background and glassmorphism UI.
+
+**Plans**: 1 plan
+
+Plans:
+- [ ] 06-01: Implement Three.js ecosystem, glassmorphism CSS, and GSAP scroll choreography.
+
 ## Phase Details
 
 ### Phase 1: Foundation & UI System
@@ -76,3 +85,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 | 2. Core Content Sections | 2/2 | Complete | Yes |
 | 3. Polish & Interactivity | 1/1 | Complete | Yes |
 | 4. 3D & Animation Overhaul | 0/1 | Not Started | No |
+| 5. Immersive 3D Staircase | 0/1 | Reverted | No |
+| 6. Peachweb 3D Ecosystem | 0/1 | In Progress | No |
