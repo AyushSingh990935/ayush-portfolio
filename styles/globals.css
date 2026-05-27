@@ -789,3 +789,57 @@ section {
     animation: none;
   }
 }
+
+/* ==================== */
+/* CUSTOM CURSOR */
+/* ==================== */
+body {
+  /* cursor: none; */ /* Uncomment to hide default cursor completely, but let's keep it visible on fallback */
+}
+
+@media (min-width: 769px) {
+  /* Only hide default cursor on desktop where custom cursor is active */
+  body, a, button, .btn {
+    cursor: none !important;
+  }
+}
+
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 9999;
+  pointer-events: none;
+  display: none; /* hidden on mobile */
+}
+
+@media (min-width: 769px) {
+  .cursor-dot,
+  .cursor-outline {
+    display: block;
+  }
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-warm);
+}
+
+.cursor-outline {
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(255, 184, 108, 0.5);
+  transition: width 0.2s ease-out, height 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+/* Cursor Hover States */
+.cursor-outline.hovering {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 184, 108, 0.1);
+  border-color: var(--accent-warm);
+}

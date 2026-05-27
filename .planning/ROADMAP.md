@@ -9,6 +9,7 @@ Building a premium, interactive personal portfolio website for Ayush Singh from 
 - [x] **Phase 1: Foundation & UI System** - Setup the project, routing, and core premium aesthetics.
 - [x] **Phase 2: Core Content Sections** - Build the Hero, Experience, and Education sections based on his LinkedIn.
 - [x] **Phase 3: Polish & Interactivity** - Refine the "anti-gravity" animations, parallax scrolling, and finalize contact elements.
+- [ ] **Phase 4: 3D & Animation Overhaul (Peachweb Inspiration)** - Introduce Spline 3D scenes, GSAP scroll triggers, and spatial interactions.
 
 ## Phase Details
 
@@ -50,13 +51,28 @@ Plans:
 Plans:
 - [x] 03-01: Add Framer Motion/CSS animations and contact footer.
 
+### Phase 4: 3D & Animation Overhaul
+**Goal**: Elevate the portfolio into an immersive, interactive 3D web experience inspired by Peachweb.
+**Depends on**: Phase 3
+**Requirements**: UI-04
+**Success Criteria** (what must be TRUE):
+  1. Spline 3D objects are integrated into the Hero and Contact sections.
+  2. GSAP scroll triggers replace basic CSS animations.
+  3. Vanilla-Tilt.js adds spatial depth to project/experience cards.
+  4. Custom trailing cursor is implemented.
+**Plans**: 1 plan
+
+Plans:
+- [ ] 04-01: Implement 3D assets, GSAP animations, and custom cursor.
+
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3
+Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & UI System | 1/1 | Complete | Yes |
 | 2. Core Content Sections | 2/2 | Complete | Yes |
 | 3. Polish & Interactivity | 1/1 | Complete | Yes |
+| 4. 3D & Animation Overhaul | 0/1 | Not Started | No |

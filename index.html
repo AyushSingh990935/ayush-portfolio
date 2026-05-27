@@ -40,9 +40,14 @@
     </nav>
 
     <!-- ========== HERO ========== -->
-    <section id="hero" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; padding-top: 6rem; padding-bottom: 4rem; overflow: hidden;">
-        <!-- Background Radial Gradient (Warm Peach/Orange) -->
-        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80vw; height: 80vw; max-width: 800px; max-height: 800px; background: radial-gradient(circle, var(--accent-purple-start) 0%, transparent 70%); opacity: 0.25; z-index: 0; pointer-events: none; border-radius: 50%;"></div>
+    <section id="hero" style="min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; padding-top: 6rem; padding-bottom: 4rem; overflow: hidden; background: #faf9f6;">
+        <!-- 3D Spline Background -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; opacity: 0.8; pointer-events: auto;">
+            <spline-viewer url="https://prod.spline.design/qZ1X71Z6-lT5Kq6n/scene.splinecode"></spline-viewer>
+        </div>
+
+        <!-- Background Radial Gradient (Warm Peach/Orange) Overlay -->
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80vw; height: 80vw; max-width: 800px; max-height: 800px; background: radial-gradient(circle, rgba(255,184,108,0.2) 0%, transparent 70%); z-index: 1; pointer-events: none; border-radius: 50%;"></div>
         
         <div class="container" style="position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; text-align: center;">
             
@@ -422,16 +427,22 @@
     <section id="contact" style="padding-bottom: 6rem;">
         <div class="container">
             <div class="contact-card-premium animate-on-scroll" style="background: #0a0a0a; border: none; position: relative; overflow: hidden; padding: 8rem 2rem; border-radius: 32px; box-shadow: 0 32px 64px rgba(0,0,0,0.1); text-align: center;">
-                <!-- Decorative Gradients -->
-                <div style="position: absolute; top: -50%; left: -50%; width: 150%; height: 150%; background: radial-gradient(circle at center, rgba(255,126,103,0.15) 0%, transparent 50%); z-index: 0; pointer-events: none;"></div>
-                <div style="position: absolute; bottom: -50%; right: -50%; width: 150%; height: 150%; background: radial-gradient(circle at center, rgba(255,184,108,0.1) 0%, transparent 50%); z-index: 0; pointer-events: none;"></div>
                 
-                <div style="position: relative; z-index: 1;">
+                <!-- 3D Spline Background -->
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; opacity: 0.6; pointer-events: auto;">
+                    <spline-viewer url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode"></spline-viewer>
+                </div>
+
+                <!-- Decorative Gradients Overlay -->
+                <div style="position: absolute; top: -50%; left: -50%; width: 150%; height: 150%; background: radial-gradient(circle at center, rgba(255,126,103,0.15) 0%, transparent 50%); z-index: 1; pointer-events: none;"></div>
+                <div style="position: absolute; bottom: -50%; right: -50%; width: 150%; height: 150%; background: radial-gradient(circle at center, rgba(255,184,108,0.1) 0%, transparent 50%); z-index: 1; pointer-events: none;"></div>
+                
+                <div style="position: relative; z-index: 2; pointer-events: none;">
                     <p style="font-family: var(--font-accent); font-style: italic; font-size: 1.5rem; color: var(--accent-warm); margin-bottom: 1.5rem;">Ready to build something great?</p>
                     <h2 style="font-family: var(--font-heading); font-size: clamp(4rem, 10vw, 8rem); margin-bottom: 1.5rem; color: #ffffff; text-transform: uppercase; line-height: 1; letter-spacing: 0.02em;">LET'S CONNECT</h2>
                     <p style="color: rgba(255,255,255,0.7); max-width: 500px; margin: 0 auto 3rem; font-size: 1.25rem; font-family: var(--font-main); line-height: 1.6;">Open to discussing strategic roles, operations consulting, and new opportunities.</p>
                     
-                    <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
+                    <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem; pointer-events: auto;">
                         <a href="mailto:singhayush17846@gmail.com" class="btn" style="background: #ffffff; color: #000000; padding: 1.2rem 3rem; font-weight: 700; border-radius: 50px; font-size: 1.1rem; text-decoration: none; transition: transform 0.3s ease;">Email Me ✉</a>
                         <a href="https://www.linkedin.com/in/0ayushsingh/" target="_blank" rel="noopener noreferrer" class="btn" style="background: transparent; color: #ffffff; border: 1px solid rgba(255,255,255,0.3); padding: 1.2rem 3rem; font-weight: 700; border-radius: 50px; font-size: 1.1rem; text-decoration: none; transition: background 0.3s ease;">LinkedIn ↗</a>
                     </div>
@@ -451,7 +462,18 @@
         </div>
     </footer>
 
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- 3D & Animation Libraries -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.94/build/spline-viewer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <!-- Scripts -->
     <script src="./js/main.js"></script>
+    <script src="./js/animations.js"></script>
 </body>
 </html>
