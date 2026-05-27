@@ -269,9 +269,9 @@ section {
 }
 
 .exp-logo {
-  width: 48px;
-  height: 48px;
-  min-width: 48px;
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
   border-radius: var(--radius-sm);
   background: #ffffff;
   border: 1px solid var(--border-light);
@@ -289,9 +289,9 @@ section {
 }
 
 .exp-logo-text {
-  width: 48px;
-  height: 48px;
-  min-width: 48px;
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
   border-radius: var(--radius-sm);
   display: flex;
   align-items: center;
@@ -391,9 +391,9 @@ section {
 }
 
 .edu-logo {
-  width: 56px;
-  height: 56px;
-  min-width: 56px;
+  width: 72px;
+  height: 72px;
+  min-width: 72px;
   border-radius: var(--radius-sm);
   overflow: hidden;
 }
