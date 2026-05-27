@@ -1,1 +1,58 @@
-/* Animations handled by GSAP */
+/* Scroll Animations — handled via IntersectionObserver in main.js */
+/* Classes .animate-on-scroll and .is-visible are now in globals.css */
+
+/* Micro-interactions */
+.interactive-hover {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.interactive-hover:hover {
+  transform: translateY(-4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .interactive-hover:hover {
+    transform: none;
+  }
+}
+
+/* Anti-Gravity Floating Animation */
+@keyframes anti-gravity {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating-element {
+  animation: anti-gravity 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-element {
+    animation: none;
+  }
+}
+
+/* Gradient Text Animation */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--accent-purple-start), var(--accent-orange-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  background-size: 200% 200%;
+  animation: gradient-shift 6s ease infinite;
+}
