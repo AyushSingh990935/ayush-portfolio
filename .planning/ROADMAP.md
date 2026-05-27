@@ -9,7 +9,7 @@ Building a premium, interactive personal portfolio website for Ayush Singh from 
 - [x] **Phase 1: Foundation & UI System** - Setup the project, routing, and core premium aesthetics.
 - [x] **Phase 2: Core Content Sections** - Build the Hero, Experience, and Education sections based on his LinkedIn.
 - [x] **Phase 3: Polish & Interactivity** - Refine the "anti-gravity" animations, parallax scrolling, and finalize contact elements.
-- [x] **Phase 4: 3D & Animation Overhaul (Peachweb Inspiration)** - Introduce Spline 3D scenes, GSAP scroll triggers, and spatial interactions.
+- [ ] **Phase 4: 3D & Animation Overhaul (Peachweb Inspiration)** - Introduce Spline 3D scenes, GSAP scroll triggers, and spatial interactions.
 
 ## Phase Details
 
@@ -63,30 +63,16 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [x] 04-01: Implement 3D assets, GSAP animations, and custom cursor.
-
-### Phase 5: Immersive 3D Staircase Background
-**Goal**: Create a procedural 3D staircase using Three.js where the camera walks down the stairs synchronized to the user's scroll.
-**Depends on**: Phase 4
-**Requirements**: UI-05
-**Success Criteria** (what must be TRUE):
-  1. A fixed Three.js canvas renders a 3D staircase in the background.
-  2. The camera moves down the stairs accurately based on scroll progress via GSAP.
-  3. Existing UI sections have translucent backgrounds so the staircase is visible.
-**Plans**: 1 plan
-
-Plans:
-- [x] 05-01: Implement Three.js environment, procedural stairs, and GSAP ScrollTrigger camera logic.
+- [ ] 04-01: Implement 3D assets, GSAP animations, and custom cursor.
 
 ## Progress
 
 **Execution Order:**
-Phases execute in numeric order: 1 → 2 → 3 → 4 → 5
+Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & UI System | 1/1 | Complete | Yes |
 | 2. Core Content Sections | 2/2 | Complete | Yes |
 | 3. Polish & Interactivity | 1/1 | Complete | Yes |
-| 4. 3D & Animation Overhaul | 1/1 | Complete | Yes |
-| 5. Immersive 3D Staircase | 1/1 | Complete | Yes |
+| 4. 3D & Animation Overhaul | 0/1 | Not Started | No |
